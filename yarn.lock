@@ -1133,7 +1133,7 @@ macaca-utils@^1.0.0, macaca-utils@~1.0.0:
   dependencies:
     xutil "^1.0.7"
 
-macaca-wd@^1.0.18:
+macaca-wd@^1.0.1, macaca-wd@^1.0.18:
   version "1.0.18"
   resolved "http://registry.npm.taobao.org/macaca-wd/download/macaca-wd-1.0.18.tgz#fa01c4bc06c81fcb09fb59613c0b8aff8ad8aa9b"
   dependencies:
@@ -2016,6 +2016,14 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+webdriver-client@^1.0.20:
+  version "1.0.20"
+  resolved "http://registry.npm.taobao.org/webdriver-client/download/webdriver-client-1.0.20.tgz#ba0c55aa166d706f95bb5355f81ce37d1bd1e9a6"
+  dependencies:
+    macaca-wd "^1.0.1"
+    xlogger "~1.0.0"
+    xutil "~1.0.0"
 
 webdriver-dfn-error-code@^1.0.3, webdriver-dfn-error-code@~1.0.0, webdriver-dfn-error-code@~1.0.1:
   version "1.0.4"

@@ -7,8 +7,8 @@ var today={};
 var _today=moment();
 today.dasd=_today.format('YYYY-MM-DD-hh-mm-ss');
 
-var br = process.env.browser || 'electron';
-br = br.toLowerCase();
+// var br = process.env.browser || 'chrome';
+// br = br.toLowerCase();
 describe('macaca-test', function () {
 
     this.timeout(5 * 60 * 1000);
@@ -22,7 +22,7 @@ describe('macaca-test', function () {
         return dr
             .init({
                 platformName: 'desktop',
-                browserName: br,
+                browserName: 'electron',
                 userAgent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0 Safari/537.36 Macaca Custom UserAgent',
                 deviceScaleFactor: 2
             })
@@ -40,7 +40,6 @@ describe('macaca-test', function () {
     // });
     after(function () {
         return  dr
-            .saveScreenshot(today.dasd)
         //     .then(img=>{
         //         const newimg = new Buffer(img,'base64');
         //         const folder=path.resolve(__dirname,'../screenshot');
@@ -88,7 +87,7 @@ describe('macaca-test', function () {
                 .elementById('btnInvalidOrder').click()
                 .catch(e=>{
                     console.log(e);
-                    saveScreenshot('pic1')
+                    dr.saveScreenshot('pic1')
             })
         })
  })
