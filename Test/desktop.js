@@ -86,7 +86,10 @@ describe('macaca-test', function () {
                 .sleep(1000)
                 .execute('document.getElementsByName(\'corder\')[6].checked=true')
                 .elementById('btnInvalidOrder').click()
-
- })
+                .catch(e=>{
+                    console.log(e);
+                    saveScreenshot('pic1')
+            })
+        })
  })
 });
