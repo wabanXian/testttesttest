@@ -119,7 +119,7 @@ describe('macaca-test', function () {
                 .catch(e=> {
                 dr.saveScreenshot(today.dasd+'.jpg');
             i-=1; if (i==0)
-            {dr.saveScreenshot(today.dasd+'e'+'png') ;throw e;}
+            {dr.saveScreenshot('error.png') ;throw e;}
         })
         })
  });
