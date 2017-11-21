@@ -16,7 +16,9 @@
     "macaca-wd": "^1.0.18",
     "mocha": "^4.0.1",
     "moment": "^2.19.2",
+    "node-cmd": "^3.0.0",
     "opn": "^5.1.0",
+    "phantomjs": "^2.1.7",
     "should": "^13.1.3",
     "webdriver-client": "^1.0.20",
     "webdriver-keycode": "^1.0.3"
